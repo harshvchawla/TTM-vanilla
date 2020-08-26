@@ -1,98 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Toronto Tech Mentoring</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- libraries -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script> -->
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
-  <header>
-    <nav class="nav"></nav>
-  </header>
-  <main class="flow">
-    <!-- Section 1 - HERO BEGIN -->
-    <section class="hero">
 
-    </section>
-    <!-- Section 1 - HERO END -->
+  <button onclick="scaleFunction()">Click me</button>
 
-    <!-- Section 2 - BUBBLES BEGIN -->
-    <section class="bubbles">
-      <div class="one item">
-        <p>Why tech?</p>
-        <p>Our world is increasingly driven by technology -- it’s all around us, and it changes how we interact with the
-          world
-          and each other. Technical literacy is widely considered one of the most important 21st century skills, and it
-          is a
-          passport into participation in the modern economy. Tech skills are consistently one of the most in-demand
-          skill sets.
-        </p>
-        <svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <style type="text/css">
-              <![CDATA[
-              g {
-                fill: red;
-              }
-              ]]>
-            </style>
-          </defs>
-          <g transform="scale(0.8)">
+  <svg id="amoeba" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <style type="text/css">
+        <![CDATA[
+        g {
+          fill: red;
+        }
+        ]]>
+      </style>
+    </defs>
 
-            <path class="bubble-1" fill-rule="evenodd" clip-rule="evenodd"
-              d="M256.569 270.752C224.146 284.41 180.581 280.681 147.19 282.611C109.127 284.81 90.4884 342.205 71.7378 319.527C52.9998 296.864 88.1465 249.069 87.2484 219.29C86.2864 187.395 42.6174 159.865 68.5683 130.029C94.8122 99.8556 148.763 108.987 190.53 100.545C218.975 94.7961 245.463 90.9272 273.66 88.577C310.389 85.5155 352.598 70.6196 380.104 84.7439C409.013 99.5883 419.318 131.146 416.381 161.863C413.529 191.694 391.488 221.892 364.537 247.567C340.274 270.68 289.18 257.016 256.569 270.752Z"
-              fill="#A6FFFF" fill-opacity="0.3" />
-          </g>
-        </svg>
+    <!--
+      <g transform="scale(1)"> 
+        Using js to update svg width/height instead
+      -->
 
-      </div>
-      </div>
-      <div class="two item">Two</div>
-      <div class="three item">Three</div>
-      <div class="four item">
-        <p>We are a values-driven organization </p>
-        <p>By enabling access to tech education, we strive to democratize the benefits of technology for all, including
-          society’s most marginalized and vulnerable communities. We are an evidence-based organization and are
-          committed
-          to continuous improvement through ongoing evaluation processes.</p>
-      </div>
-    </section>
-    <!-- Section 2 - BUBBLES END -->
 
-    <!--  Section 2 - CARDS BEGIN -->
+      <path class="bubble-1" fill-rule="evenodd" clip-rule="evenodd"
+        d="M256.569 270.752C224.146 284.41 180.581 280.681 147.19 282.611C109.127 284.81 90.4884 342.205 71.7378 319.527C52.9998 296.864 88.1465 249.069 87.2484 219.29C86.2864 187.395 42.6174 159.865 68.5683 130.029C94.8122 99.8556 148.763 108.987 190.53 100.545C218.975 94.7961 245.463 90.9272 273.66 88.577C310.389 85.5155 352.598 70.6196 380.104 84.7439C409.013 99.5883 419.318 131.146 416.381 161.863C413.529 191.694 391.488 221.892 364.537 247.567C340.274 270.68 289.18 257.016 256.569 270.752Z"
+        fill="#A6FFFF" fill-opacity="0.3" />
+    </g>
+  </svg>
 
-    <section class="cards">
-
-    </section>
-    <!--  Section 2 - CARDS END -->
-
-    <!-- Section 3 - BEGIN -->
-    <section class="s-3">
-
-    </section>
-    <!-- Section 3 - END -->
-
-    <!-- Section 4 - BEGIN -->
-    <section class="s-4">
-
-    </section>
-    <!-- Section 4 - END -->
-
-    <!-- Section 5 - BEGIN -->
-    <section class="s-5 timeline">
-
-    </section>
-    <!-- Section 5 - END -->
-
-  </main>
-  <footer>
-    <div class="copyright"></div>
-    <div class="nav-links"></div>
-    <div class="socials"></div>
-  </footer>
-</body>
-
+  <!-- scripts -->
+  <script src="scripts/app.js"></script>
+  </body>
 </html>
