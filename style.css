@@ -1,0 +1,247 @@
+* {
+  border: 1px solid red;
+}
+:root {
+  /* Primary Purple */
+  --primary: #873fe2;
+  /* For text like, “Learn more” next to callout buttons */
+  --dark-blue: #0033c7;
+  /* Main blocks of text */
+  --dark-purple: #593ecb;
+  /* Medium Blue */
+  --medium-blue: #81a6ff;
+  /* Turquoise */
+  --turquoise: #a6ffff;
+  /* For sparks, or underline on words */
+  --orange: #ff7500;
+}
+.heading {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+}
+.text {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+}
+
+.text-300 {
+  font-size: 0.8rem;
+}
+
+.text-400 {
+  font-size: 1rem;
+}
+
+.text-500 {
+  font-size: 1.33rem;
+}
+
+.text-600 {
+  font-size: 1.77rem;
+}
+
+.text-700 {
+  font-size: 2.4rem;
+}
+
+.weight-medium {
+  font-weight: 500;
+}
+
+.weight-bold {
+  font-weight: 700;
+}
+@media screen and (min-width: 48em) {
+  .md\:text-300 {
+    font-size: 0.8rem;
+  }
+
+  .md\:text-400 {
+    font-size: 1rem;
+  }
+
+  .md\:text-500 {
+    font-size: 1.33rem;
+  }
+
+  .md\:text-600 {
+    font-size: 1.77rem;
+  }
+
+  .md\:text-700 {
+    font-size: 2.4rem;
+  }
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  max-width: 90vw;
+  margin-right: auto;
+  margin-left: auto;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-x: hidden;
+  /* padding-bottom: 1.77rem; */
+  font-weight: 500;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2,
+h3 {
+  font-size: 1.77rem;
+}
+
+a {
+  color: currentColor;
+}
+:focus {
+  outline: 2px dotted;
+  outline-offset: 0.25rem;
+}
+.pill {
+  display: inline-block;
+  padding: 0.3rem 0.35rem;
+  font-size: 1rem;
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+}
+/* Natural flow and rhythm in articles by default */
+.flow > * + * {
+  margin-top: 1em;
+}
+/* NAV BEGIN*/
+.nav {
+  min-width: 100vw;
+  min-height: 5rem;
+}
+/* NAV END*/
+
+/* Section 1 - HERO BEGIN*/
+.hero {
+  min-height: 80vh;
+}
+/* Section 1 - HERO END*/
+
+/* Section 2 - BUBBLES BEGIN*/
+.bubbles {
+  min-height: 90vh;
+  /* padding: 2.5rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* place-items: center; */
+  grid-gap: 0.5rem;
+}
+@media screen and (max-width: 48em) {
+  .bubbles {
+    grid-template-columns: auto;
+  }
+}
+.bubble--1 {
+}
+.item {
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.one {
+  width: 500px;
+  height: 400px;
+}
+.two {
+  background: #8cc7b5;
+}
+.three {
+  background: #d1ba74;
+}
+.four {
+  background: #bee7e9;
+}
+
+/* Section 2 - BUBBLES END*/
+
+/* Section 2 - CARDS BEGIN*/
+/* Use FLEXBOX HERE */
+/* Section 2 - CARDS END*/
+
+/* Section 3 - BEGIN*/
+/* GRID AGAIN? */
+/* Section 3 - END*/
+/* Section 4 - BEGIN*/
+/* Just text align center should be enough */
+/* Section 4 - END*/
+/* Section 5 - BEGIN*/
+/* GRID  */
+/* Section 5 - END*/
